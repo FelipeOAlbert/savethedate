@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Adm Carmaniacs | Login</title>
+	<title>Adm | Login</title>
 	<base href="<?=base_url();?>" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +39,7 @@
 <body class="login-bg">
 
     <div class="login-wrapper">
-        <h3>Admin Carmaniacs</h3>
+        <h3>Admin</h3>
 		<br />
 		<br />
 
