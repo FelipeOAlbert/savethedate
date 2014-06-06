@@ -8,12 +8,12 @@
         <div id="pad-wrapper" class="new-user">
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Editar Serviço</h3>
+                    <h3>Novo Cliente</h3>
                 </div>
             </div>
 			<br /><br />
-			<? $this->load->view('dashboard/service/_form');?>
+			<? $this->load->view('dashboard/client/_form');?>
         </div>
     </div>
     <!-- end main container -->
-	<? $this->load->view('dashboard/template/footer');?>
+<? $this->load->view('dashboard/template/footer');?>

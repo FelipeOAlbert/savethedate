@@ -5,7 +5,7 @@
 			<span class="icon-bar"></span> <span class="icon-bar"></span>
 		</button>
 		<a href="<?=site_url("dashboard");?>" class="navbar-brand">
-			<img src="<?=base_url('assets/img/novologotipo2.png');?>" width="350" height="60" alt="ADM - Carmaniacs" style="margin-top: -12px;"/>
+			<img src="<?=base_url('assets/img/novologotipo2.png');?>" width="350" height="60" alt="ADM - Logo aqui" style="margin-top: -12px;"/>
 		</a>
 	</div>
 	<ul class="nav navbar-nav pull-right">

@@ -29,9 +29,9 @@
 			<? } ?>
             
 			<div class="row">
-                <h2 class="col-md-10 col-sm-10 col-xs-10">Banners</h2> 
+                <h2 class="col-md-10 col-sm-10 col-xs-10">Clientes</h2> 
                 <div class="col-md-2 col-sm-2 col-xs-2">
-                     <a href="<?=site_url("banner/create");?>" class="btn btn-success pull-right"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Adicionar</a>
+                     <a href="<?=site_url("client/create");?>" class="btn btn-success pull-right"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Adicionar</a>
                 </div>
             </div>
 			<br />
@@ -50,8 +50,7 @@
                             <tr>
                                 <th class="col-md-1">#</th>
                                 <th class="col-md-2">Nome</th>
-								<th class="col-md-2">Imagem</th>
-								<th class="col-md-2">Texto</th>
+								<th class="col-md-2">Email</th>
 								<th class="col-md-2">Status</th> 
                                 <th class="col-md-2">Ação</th>
                             </tr>
@@ -65,9 +64,8 @@
 									<td>
 										<input type="text" name="name" value="<?=@$search['name'];?>" placeholder="Filtrar por Nome" class="form-control" />
 									</td>
-									<td></td>
 									<td>
-										<input type="text" name="description" value="<?=@$search['description'];?>" placeholder="Filtrar por Descrição" class="form-control" />
+										<input type="text" name="email" value="<?=@$search['email'];?>" placeholder="Filtrar por Email" class="form-control" />
 									</td>
 									<td>
 										<select name="status_id" class="form-control" id="onChange">
@@ -93,25 +91,18 @@
 									   <?=$row['name'];?>
 									</td>
 									<td>
-										<? if(!empty($row['image'])){ $row['image'] = explode('.', $row['image']);?>
-											<img src="<?=site_url('assets/uploads/banner/'.$row['image'][0].'_thumb.'.$row['image'][1]);?>" width="190"/>
-										<? }else{ ?>
-										<p>Sem imagem</p>
-										<? } ?>
-									</td>
-									<td>
-									   <?=word_limiter($row['description'], 20);?>
+									   <?=$row['email'];?>
 									</td>
 									<td>
 									   <?=status2txt($row['status_id']);?>
 									</td>
 									<td>
-										<a href="<?=site_url($this->router->class."/update/".$row['id']);?>" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;Editar</a>
+										<a href="<?=site_url("client/update/".$row['id']);?>" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;Editar</a>
 										
 										<? if($row['status_id'] == 1){ ?>
-											<a href="<?=site_url($this->router->class.'/delete/'.$row['id']);?>" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;Inativar</a>
+											<a href="<?=site_url('client/delete/'.$row['id']);?>" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;Inativar</a>
 										<? }else{ ?>
-											<a href="<?=site_url($this->router->class.'/active/'.$row['id']);?>" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;Ativar</a>
+											<a href="<?=site_url('client/active/'.$row['id']);?>" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;Ativar</a>
 										<? } ?>
 									</td>
 							   </tr>
@@ -123,7 +114,7 @@
             </div>
 
             <?php }else{ ?>
-               <p> Nenhum banner cadastrado, clique no botão acima para adicionar.</p>
+               <p> Nenhum cliente cadastrado, clique no botão acima para adicionar.</p>
             <?php } ?>
 
             <?=$paginacao?>

@@ -1,44 +1,15 @@
 <div id="sidebar-nav">
 	<ul id="dashboard-menu">
 		<li>
-			<a href="javascript:" class="dropdown-toggle dropdown-hover"> <i class="icon-tasks"></i> <span>Banner</span>
+			<a href="javascript:" class="dropdown-toggle dropdown-hover"> <i class="icon-group"></i> <span>Clientes</span>
 				<i class="icon-chevron-down"></i>
 			</a>
 			<ul class="submenu">
 				<li>
-					<a href="<?=site_url('banner/index');?>">Listagem</a>
+					<a href="<?=site_url('client/index');?>">Listagem</a>
 				</li>
 				<li>
-					<a href="<?=site_url('banner/create');?>">Adicionar</a>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<a href="<?=site_url('business/update/1');?>" class=""><i class="icon-edit"></i> <span>Empresa</span></a>
-		</li>
-		<li>
-			<a href="javascript:" class="dropdown-toggle"> <i class="icon-tasks"></i> <span>Serviços</span>
-				<i class="icon-chevron-down"></i>
-			</a>
-			<ul class="submenu">
-				<li>
-					<a href="<?=site_url("service/index");?>">Listagem</a>
-				</li>
-				<li>
-					<a href="<?=site_url("service/create");?>">Adicionar</a>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<a href="javascript:" class="dropdown-toggle"> <i class="icon-tasks"></i> <span>Notícias</span>
-				<i class="icon-chevron-down"></i>
-			</a>
-			<ul class="submenu">
-				<li>
-					<a href="<?=site_url('notice/index');?>">Listagem</a>
-				</li>
-				<li>
-					<a href="<?=site_url('notice/create');?>">Adicionar</a>
+					<a href="<?=site_url('client/create');?>">Adicionar</a>
 				</li>
 			</ul>
 		</li>

@@ -8,11 +8,11 @@
         <div id="pad-wrapper" class="new-user">
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Editar Banner</h3>
+                    <h3>Editar Cliente</h3>
                 </div>
             </div>
 			<br /><br />
-			<? $this->load->view('dashboard/banner/_form');?>
+			<? $this->load->view('dashboard/client/_form');?>
         </div>
     </div>
     <!-- end main container -->
