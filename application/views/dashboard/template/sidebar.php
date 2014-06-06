@@ -14,6 +14,19 @@
 			</ul>
 		</li>
 		<li>
+			<a href="javascript:" class="dropdown-toggle dropdown-hover"> <i class="icon-group"></i> <span>Planos</span>
+				<i class="icon-chevron-down"></i>
+			</a>
+			<ul class="submenu">
+				<li>
+					<a href="<?=site_url('plan/index');?>">Listagem</a>
+				</li>
+				<li>
+					<a href="<?=site_url('plan/create');?>">Adicionar</a>
+				</li>
+			</ul>
+		</li>
+		<li>
 			<a href="<?=site_url("user/index")?>" class="dropdown-toggle"> <i class="icon-group"></i> <span>Usuários</span>
 				<i class="icon-chevron-down"></i>
 			</a>
