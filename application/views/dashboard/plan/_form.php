@@ -17,23 +17,15 @@
 					<label>Nome:</label>
 					<input class="form-control" type="text" name="name" value="<?=set_value('name', @$row['name'], $this->input->post('name')); ?>" />
 				</div>
+				
 				<div class="col-md-12 field-box">
-					<label>Email:</label>
-					<input class="form-control" type="text" name="email" value="<?=set_value('email', @$row['email'], $this->input->post('email')); ?>" />
+					<label>Descrição:</label>
+					<textarea class="form-control" name="description"><?=set_value('description', @$row['description'], $this->input->post('description')); ?></textarea>
 				</div>
 				
 				<div class="col-md-12 field-box">
-					<label>Senha:</label>
-					<div class="col-lg-6">
-						<input class="form-control" type="password" name="password" style="margin-left:-15px;" />
-					</div>
-				</div>
-				
-				<div class="col-md-12 field-box">
-					<label>Confirmar Senha:</label>
-					<div class="col-lg-6">
-						<input class="form-control" type="password" name="confirm_password" style="margin-left:-15px;" />
-					</div>
+					<label>Valor:</label>
+					<input class="form-control money" type="text" name="value" value="<?=set_value('value', money(@$row['value']), $this->input->post('value')); ?>" />
 				</div>
 				
 				<div class="col-md-11 field-box actions">

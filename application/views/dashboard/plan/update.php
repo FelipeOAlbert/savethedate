@@ -12,7 +12,7 @@
                 </div>
             </div>
 			<br /><br />
-			<? $this->load->view('dashboard/client/_form');?>
+			<? $this->load->view('dashboard/plan/_form');?>
         </div>
     </div>
     <!-- end main container -->

@@ -22,6 +22,8 @@ $(document).ready(function(){
         }
     });
 	
+	$(".money").maskMoney({prefix:'', allowNegative: true, thousands:'.', decimal:',', affixesStay: false});
+	
 	//Final de ações
 	var id_to_delete	= false;
 	var url_post		= false;

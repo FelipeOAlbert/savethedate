@@ -8,6 +8,16 @@ class plan extends CI_Controller {
 			'label'	=> 'Nome',
 			'rules' => 'trim|required',
 		),
+		array(
+			'field'	=> 'description',
+			'label'	=> 'Descrição',
+			'rules' => 'trim|required',
+		),
+		array(
+			'field'	=> 'value',
+			'label'	=> 'Valor',
+			'rules' => 'trim|required',
+		)
 	);
 	
 	function __construct()
