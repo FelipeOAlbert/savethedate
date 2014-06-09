@@ -19,10 +19,10 @@ $db['development']['swap_pre']  = '';
 $db['development']['autoinit']  = TRUE;
 $db['development']['stricton']  = FALSE;
 
-$db['testing']['hostname']      = 'save.c3jvxejdpzv9.us-east-1.rds.amazonaws.com:3306';
-$db['testing']['username']      = 'savethedate';
-$db['testing']['password']      = 'save2345';
-$db['testing']['database']      = 'savethedate';
+$db['testing']['hostname']      = 'rds-1.c3jvxejdpzv9.us-east-1.rds.amazonaws.com';
+$db['testing']['username']      = 'rds';
+$db['testing']['password']      = 'felipe2345';
+$db['testing']['database']      = 'save_2';
 $db['testing']['dbdriver']      = 'mysql';
 $db['testing']['dbprefix']      = '';
 $db['testing']['pconnect']      = TRUE;
